@@ -10,22 +10,17 @@ TG群：https://t.me/peckios
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.vesal\.cn$ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
-
-**************************************
+# 解剖大师_解锁限制
+^https://api.vesal.cn/ url script-response-body jbds.js
 
 [mitm]
 hostname = api.vesal.cn
 
 *************************************/
 
-var body = $response.body;
-var objc = JSON.parse(body);
+let body = $response.body;
 
-objc.data = {
-    "isCharge":"N",
-    "ischarge":"n"
-};
+body = body.replace(/"is_charge":"\w"/g, '"is_charge":"n"');
+body = body.replace(/"isCharge":"\w"/g, '"isCharge":"N"');
 
-body = JSON.stringify(objc);
 $done({ body });
