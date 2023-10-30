@@ -13,7 +13,7 @@ TG群：https://t.me/peckios
 ^https?:\/\/.+\/(vesal-jiepao-prod|v1).+ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
 
 [mitm]
-hostname = api.vesal.cn
+hostname = *
 
 *************************************/
 
