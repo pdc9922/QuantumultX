@@ -11,7 +11,7 @@ TG群：https://t.me/peckios
 
 [rewrite_local]
 # 解剖大师_解锁限制
-^https://api.vesal.cn/ url script-response-body jbds.js
+^https://api.vesal.cn/ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
 
 [mitm]
 hostname = api.vesal.cn
