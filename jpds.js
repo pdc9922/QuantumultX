@@ -10,7 +10,7 @@ TG群：https://t.me/peckios
 **************************************
 
 [rewrite_local]
-^https?:\/\/api.vesal.cn\/ultimate\/app\/personalCenter\/getActiveComboList url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
+^https?:\/\/api.vesal.cn\/vesal-jiepao-prod\/ultimate\/app\/personalCenter\/getActiveComboList url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
 
 [mitm]
 hostname = api.vesal.cn
