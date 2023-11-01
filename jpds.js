@@ -17,9 +17,9 @@ hostname = api.vesal.cn
 
 *************************************/
 
-var objc = JSON.parse($response.body);
-
-   objc =
+var body = $response.body;
+    
+    body = '
 {
   "msg": "success",
   "BuySvip": true,
@@ -44,5 +44,5 @@ var objc = JSON.parse($response.body);
     "endTime": "2999-12-12",
     "comboCode": "ULTIMATE_ANATOMY_SVIP"
   }]
-}
-$done({body : JSON.stringify(objc)});
+}';
+$done({body});
