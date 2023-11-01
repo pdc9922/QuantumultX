@@ -10,16 +10,45 @@ TG群：https://t.me/peckios
 **************************************
 
 [rewrite_local]
-^https?:\/\/.+\/(vesal-jiepao-prod|v1).+ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
+^https?:\/\/.vesal\.cn\/(vesal-jiepao-prod|personalCenter).+ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
 
 [mitm]
-hostname = *
+hostname = api.vesal.cn
 
 *************************************/
 
-let body = $response.body;
+var body = $response.body;
+var objc = JSON.parse(body);
 
-body = body.replace(/"is_charge":"\w"/g, '"is_charge":"n"');
-body = body.replace(/"isCharge":"\w"/g, '"isCharge":"N"');
+objc.vips = [
+    {
+  "msg": "success",
+  "BuySvip": true,
+  "code": 0,
+  "list": [{
+    "totalDuration": 999881,
+    "mbId": 1846319,
+    "addTime": "2023-11-01",
+    "comboName": "解剖大师超级会员",
+    "id": 265394,
+    "endTime": "2999-12-12",
+    "comboCode": "ULTIMATE_ANATOMY_SVIP",
+    "cardNo": "61698850086965"
+  }, {
+    "mbId": 1846319,
+    "addTime": "2023-11-01 22:48:07",
+    "endTime": "2999-12-12",
+    "comboCode": "ULTIMATE_ANATOMY_VIP_PC"
+  }, {
+    "mbId": 1846319,
+    "addTime": "2023-11-01 22:48:07",
+    "endTime": "2999-12-12",
+    "comboCode": "ULTIMATE_ANATOMY_SVIP"
+  }]
+    }
+];
 
-$done({ body });
+body = JSON.stringify(objc);
+$done({ 
+    body 
+});
