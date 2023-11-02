@@ -10,22 +10,27 @@ TG群：https://t.me/peckios
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.vesal\.cn\/vesal-jiepao-prod\/ultimate\/app\/personalCenter\/getActiveComboList url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
+^https:\/\/api\.vesal\.cn\/(personalCenter\/getActiveComboList)$ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
 
 [mitm]
 hostname = api.vesal.cn
 
 *************************************/
 
-let body = $response.body;
+var body = $response.body;
+var peck = $request.url;
+var objc = JSON.parse(body);
 
-body = {
+const user = '/ultimate/app/personalCenter/getActiveComboList';
+
+if (peck.indexOf(user) != -1) {
+  objc.data[0] = {
   "msg": "success",
   "BuySvip": true,
   "code": 0,
   "list": [{
 
-"totalDuration": 999881,
+"totalDuration": 881,
 
 "mbId": 1846319,
 
@@ -60,5 +65,6 @@ body = {
 "comboCode": "ULTIMATE_ANATOMY_SVIP"
   }]
 };
-
-$done({ body: JSON.stringify(body) });
+  body = JSON.stringify(objc);
+}
+$done({ body });
