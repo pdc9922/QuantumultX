@@ -10,61 +10,37 @@ TG群：https://t.me/peckios
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.vesal\.cn\/(personalCenter\/getActiveComboList)$ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
+^https?:\/\/.+\/(personalCenter\/getActiveComboList).+ url script-response-body https://gitee.com/pdc9933/quantumult-x/raw/master/jpds.js
 
 [mitm]
 hostname = api.vesal.cn
 
 *************************************/
 
-var body = $response.body;
-var peck = $request.url;
-var objc = JSON.parse(body);
-
-const user = '/ultimate/app/personalCenter/getActiveComboList';
-
-if (peck.indexOf(user) != -1) {
-  objc.data[0] = {
-  "msg": "success",
-  "BuySvip": true,
-  "code": 0,
-  "list": [{
-
-"totalDuration": 881,
-
-"mbId": 1846319,
-
-"addTime": "2023-11-01",
-
-"comboName": "解剖大师超级会员",
-
-"id": 265394,
-
-"endTime": "2999-12-12",
-
-"comboCode": "ULTIMATE_ANATOMY_SVIP",
-
-"cardNo": "61698850086965"
-  }, {
-
-"mbId": 1846319,
-
-"addTime": "2023-11-01 22:48:07",
-
-"endTime": "2999-12-12",
-
-"comboCode": "ULTIMATE_ANATOMY_VIP_PC"
-  }, {
-
-"mbId": 1846319,
-
-"addTime": "2023-11-01 22:48:07",
-
-"endTime": "2999-12-12",
-
-"comboCode": "ULTIMATE_ANATOMY_SVIP"
-  }]
-};
-  body = JSON.stringify(objc);
-}
-$done({ body });
+var objc = JSON.parse($response.body);
+    objc = {
+    "msg": "success",
+    "BuySvip": true,
+    "code": 0,
+    "list": [{
+      "totalDuration": 881,
+      "mbId": 1846319,
+      "addTime": "2023-11-01",
+      "comboName": "解剖大师超级会员",
+      "id": 265394,
+      "endTime": "2999-12-12",
+      "comboCode": "ULTIMATE_ANATOMY_SVIP",
+      "cardNo": "61698850086965"
+    }, {
+      "mbId": 1846319,
+      "addTime": "2023-11-01 22:48:07",
+      "endTime": "2999-12-12",
+      "comboCode": "ULTIMATE_ANATOMY_VIP_PC"
+    }, {
+      "mbId": 1846319,
+      "addTime": "2023-11-01 22:48:07",
+      "endTime": "2999-12-12",
+      "comboCode": "ULTIMATE_ANATOMY_SVIP"
+    }]
+  };
+  $done({body : JSON.stringify(objc)});
