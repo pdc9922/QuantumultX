@@ -13,7 +13,7 @@ TG群：https://t.me/peckios
 ^https?:\/\/.+\/(personalCenter\/getActiveComboList).+ url script-response-body https://gitee.com/pdc9933/quantumult-x/raw/master/jpds.js
 
 [mitm]
-hostname = api.vesal.cn
+hostname = vesal.cn
 
 *************************************/
 
