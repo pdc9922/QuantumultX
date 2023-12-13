@@ -11,7 +11,7 @@ APP名称：NYMF(美区18+写真)
 
 [rewrite_local]
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/itunes/NYFM.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/NYMF.js
 
 [mitm] 
 
