@@ -9,10 +9,10 @@ QQ群：798678782
 **************************************
 
 [rewrite_local]
-^https?:\/\/revenuecat\.com\/v1\/subscribes$ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/light.js
+^https?:\/\/.+\/(v1\/subscribes).+ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/light.js
 
 [mitm]
-hostname = revenuecat.com
+hostname = api.revenuecat.com
 
 *************************************/
 
