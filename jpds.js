@@ -3,14 +3,15 @@
 APP名称：解剖大师_超级会员全解锁
 下载地址：https://apps.apple.com/cn/app/id1510070525
 QQ群：798678782
+官网：peck.cool
 TG群：https://t.me/peckios
-脚本作者：鹏
+脚本作者：鹏客软件
 使用声明：脚本仅供参考，请勿转载与售卖！
 
 **************************************
 
 [rewrite_local]
-^https?:\/\/.+\/(personalCenter\/getActiveComboList).+ url script-response-body https://gitee.com/pdc9933/quantumult-x/raw/master/jpds.js
+^https?:\/\/.+\/(personalCenter\/getActiveComboList).+ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/jpds.js
 
 [mitm]
 hostname = vesal.cn
