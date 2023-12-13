@@ -9,11 +9,82 @@ QQ群：798678782
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.revenuecat\.com\/v1\/receipts url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/light.js
+^https?:\/\/revenuecat\.com\/v1\/receipts url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/light.js
 
 [mitm]
-hostname = api.revenuecat.com
+hostname = revenuecat.com
 
 *************************************/
 
-var _0x126f21=_0x5d09;(function(_0x540884,_0x2cc269){var _0x1ad212=_0x5d09,_0x127bb0=_0x540884();while(!![]){try{var _0x127db8=-parseInt(_0x1ad212(0x1cf))/0x1*(-parseInt(_0x1ad212(0x1e2))/0x2)+-parseInt(_0x1ad212(0x1c9))/0x3+-parseInt(_0x1ad212(0x1c8))/0x4+-parseInt(_0x1ad212(0x1de))/0x5*(parseInt(_0x1ad212(0x1d4))/0x6)+-parseInt(_0x1ad212(0x1cc))/0x7*(parseInt(_0x1ad212(0x1cb))/0x8)+parseInt(_0x1ad212(0x1da))/0x9+parseInt(_0x1ad212(0x1c7))/0xa;if(_0x127db8===_0x2cc269)break;else _0x127bb0['push'](_0x127bb0['shift']());}catch(_0x4e83b6){_0x127bb0['push'](_0x127bb0['shift']());}}}(_0x5912,0x3376f));function _0x5912(){var _0x410397=['432408lslelU','1686065613000','1707912alaqKT','7Bblxam','2099-09-09\x2006:06:06\x20America/Los_Angeles','2023-06-06\x2016:06:06\x20Etc/GMT','1ALnqtO','1686065634000','2023-06-06\x2016:00:00\x20Etc/GMT','com.miiiao.iwallpaper.lifetime','2023-06-06\x2006:06:26\x20America/Los_Angeles','6HXDFKb','body','Production','false','parse','2023-06-06\x2006:00:00\x20America/Los_Angeles','3578679lVRyAl','490000123456789','1686065635000','490001314520000','1885745lLJFvz','1473','1686065612000','2023-06-06\x2006:06:27\x20America/Los_Angeles','490474HeMNuq','4092599349000','2023-06-06\x2006:06:07\x20America/Los_Angeles','2023-06-06\x2016:06:07\x20Etc/GMT','2023-06-06\x2016:06:27\x20Etc/GMT','2023-06-06\x2016:06:26\x20Etc/GMT','2099-09-09\x2009:09:09\x20Etc/GMT','3449320bVQzqg','168908KsCrjQ'];_0x5912=function(){return _0x410397;};return _0x5912();}var peck=JSON[_0x126f21(0x1d8)]($response[_0x126f21(0x1d5)]);function _0x5d09(_0x2175fe,_0x95bea2){var _0x59124f=_0x5912();return _0x5d09=function(_0x5d09d,_0x1865c5){_0x5d09d=_0x5d09d-0x1c5;var _0x43405a=_0x59124f[_0x5d09d];return _0x43405a;},_0x5d09(_0x2175fe,_0x95bea2);}peck={'status':0x0,'receipt':{'receipt_type':_0x126f21(0x1d2),'app_item_id':0x52ae8015,'receipt_creation_date':_0x126f21(0x1c5),'bundle_id':'com.miiiao.iwallpaper.lifetime','in_app':[{'quantity':'1','purchase_date_ms':'1686065612000','expires_date':'2099-09-09\x2009:09:09\x20Etc/GMT','expires_date_pst':_0x126f21(0x1cd),'is_in_intro_offer_period':'false','transaction_id':_0x126f21(0x1dd),'is_trial_period':_0x126f21(0x1d7),'original_transaction_id':_0x126f21(0x1dd),'purchase_date':'2023-06-06\x2016:06:06\x20Etc/GMT','product_id':_0x126f21(0x1d2),'original_purchase_date_pst':_0x126f21(0x1e4),'in_app_ownership_type':'PURCHASED','original_purchase_date_ms':_0x126f21(0x1ca),'web_order_line_item_id':_0x126f21(0x1db),'expires_date_ms':'4092599349000','purchase_date_pst':'2023-06-06\x2006:06:06\x20America/Los_Angeles','original_purchase_date':_0x126f21(0x1e5)}],'original_purchase_date':_0x126f21(0x1d1),'adam_id':0x52ae8015,'receipt_creation_date_pst':_0x126f21(0x1d3),'request_date':_0x126f21(0x1e6),'request_date_pst':_0x126f21(0x1e1),'version_external_identifier':0x34fb5e38,'request_date_ms':_0x126f21(0x1dc),'original_purchase_date_pst':_0x126f21(0x1d9),'application_version':_0x126f21(0x1df),'original_purchase_date_ms':'1686065430000','receipt_creation_date_ms':_0x126f21(0x1d0),'original_application_version':_0x126f21(0x1df),'download_id':0x94079cd1a42aa80},'latest_receipt_info':[{'quantity':'1','purchase_date_ms':_0x126f21(0x1e0),'expires_date':_0x126f21(0x1c6),'expires_date_pst':_0x126f21(0x1cd),'is_in_intro_offer_period':_0x126f21(0x1d7),'transaction_id':_0x126f21(0x1dd),'is_trial_period':'false','original_transaction_id':'490001314520000','purchase_date':_0x126f21(0x1ce),'product_id':_0x126f21(0x1d2),'original_purchase_date_pst':_0x126f21(0x1e4),'in_app_ownership_type':'PURCHASED','original_purchase_date_ms':'1686065613000','web_order_line_item_id':_0x126f21(0x1db),'expires_date_ms':_0x126f21(0x1e3),'purchase_date_pst':'2023-06-06\x2006:06:06\x20America/Los_Angeles','original_purchase_date':_0x126f21(0x1e5)}],'latest_receipt':'','environment':_0x126f21(0x1d6),'pending_renewal_info':[{'product_id':_0x126f21(0x1d2),'original_transaction_id':'490001314520000','auto_renew_product_id':_0x126f21(0x1d2),'auto_renew_status':'1'}],'warning':'本脚本由鹏客软件出品，禁止转载售卖'},$done({'body':JSON['stringify'](peck)});
+var objc = JSON.parse($response.body);
+objc = {
+    "status": 0,
+    "receipt": {
+        "receipt_type": "com.miiiao.iwallpaper.lifetime",
+        "app_item_id": 1387167765,
+        "receipt_creation_date": "2023-06-06 16:06:26 Etc/GMT",
+        "bundle_id": "com.miiiao.iwallpaper.lifetime",
+        "in_app": [{
+            "quantity": "1",
+            "purchase_date_ms": "1686065612000",
+            "expires_date": "2099-09-09 09:09:09 Etc/GMT",
+            "expires_date_pst": "2099-09-09 06:06:06 America/Los_Angeles",
+            "is_in_intro_offer_period": "false",
+            "transaction_id": "490001314520000",
+            "is_trial_period": "false",
+            "original_transaction_id": "490001314520000",
+            "purchase_date": "2023-06-06 16:06:06 Etc/GMT",
+            "product_id": "com.miiiao.iwallpaper.lifetime",
+            "original_purchase_date_pst": "2023-06-06 06:06:07 America/Los_Angeles",
+            "in_app_ownership_type": "PURCHASED",
+            "original_purchase_date_ms": "1686065613000",
+            "web_order_line_item_id": "490000123456789",
+            "expires_date_ms": "4092599349000",
+            "purchase_date_pst": "2023-06-06 06:06:06 America/Los_Angeles",
+            "original_purchase_date": "2023-06-06 16:06:07 Etc/GMT"
+        }],
+        "original_purchase_date": "2023-06-06 16:00:00 Etc/GMT",
+        "adam_id": 1387167765,
+        "receipt_creation_date_pst": "2023-06-06 06:06:26 America/Los_Angeles",
+        "request_date": "2023-06-06 16:06:27 Etc/GMT",
+        "request_date_pst": "2023-06-06 06:06:27 America/Los_Angeles",
+        "version_external_identifier": 888888888,
+        "request_date_ms": "1686065635000",
+        "original_purchase_date_pst": "2023-06-06 06:00:00 America/Los_Angeles",
+        "application_version": "1473",
+        "original_purchase_date_ms": "1686065430000",
+        "receipt_creation_date_ms": "1686065634000",
+        "original_application_version": "1473",
+        "download_id": 666666666666666600
+    },
+    "latest_receipt_info": [{
+        "quantity": "1",
+        "purchase_date_ms": "1686065612000",
+        "expires_date": "2099-09-09 09:09:09 Etc/GMT",
+        "expires_date_pst": "2099-09-09 06:06:06 America/Los_Angeles",
+        "is_in_intro_offer_period": "false",
+        "transaction_id": "490001314520000",
+        "is_trial_period": "false",
+        "original_transaction_id": "490001314520000",
+        "purchase_date": "2023-06-06 16:06:06 Etc/GMT",
+        "product_id": "com.miiiao.iwallpaper.lifetime",
+        "original_purchase_date_pst": "2023-06-06 06:06:07 America/Los_Angeles",
+        "in_app_ownership_type": "PURCHASED",
+        "original_purchase_date_ms": "1686065613000",
+        "web_order_line_item_id": "490000123456789",
+        "expires_date_ms": "4092599349000",
+        "purchase_date_pst": "2023-06-06 06:06:06 America/Los_Angeles",
+        "original_purchase_date": "2023-06-06 16:06:07 Etc/GMT"
+    }],
+    "latest_receipt": "",
+    "environment": "Production",
+    "pending_renewal_info": [{
+        "product_id": "com.miiiao.iwallpaper.lifetime",
+        "original_transaction_id": "490001314520000",
+        "auto_renew_product_id": "com.miiiao.iwallpaper.lifetime",
+        "auto_renew_status": "1"
+    }],
+};
+$done({
+    body: JSON.stringify(objc)
+});
