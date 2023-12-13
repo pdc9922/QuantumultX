@@ -2,7 +2,7 @@
 /*************************************
 
 APP名称：NYMF(美区18+写真)
-下载地址：https://apps.apple.com/us/app/nymf-nude-fantasy-art-project/id1495951015?l=zh-Hans-CN
+下载地址：https://apps.apple.com/us/app/id1495951015
 鹏客官网：https://peck.cool/
 脚本作者：鹏客软件
 使用声明：脚本仅供参考，请勿转载与售卖！
