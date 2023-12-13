@@ -10,7 +10,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/chxm1023/Rewrite/main/iTunes/mweb.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/mweb.js
 
 [mitm]
 hostname = buy.itunes.apple.com
@@ -18,9 +18,9 @@ hostname = buy.itunes.apple.com
 *************************************/
 
 
-var chxm1023 = JSON.parse($response.body);
+var peck = JSON.parse($response.body);
 
-chxm1023 = {
+peck = {
   "status" : 0,
   "receipt" : {
     "receipt_type" : "Production",
@@ -87,4 +87,4 @@ chxm1023 = {
   "web" : "https://peck.cool"
 };
 
-$done({body: JSON.stringify(chxm1023)});
+$done({body: JSON.stringify(peck)});
