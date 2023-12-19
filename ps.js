@@ -8,7 +8,7 @@
 ****************************************
 [rewrite_local]
 
-^https:\/\/.adobe.io/mobiles/access_profile/v3 url script-response-body https://raw.githubusercontent.com/pdc9922/Rewrite/main/PS.js
+^https?:\/\/.adobe.io/mobiles/access_profile/v3 url script-response-body https://raw.githubusercontent.com/pdc9922/Rewrite/main/PS.js
 
 [mitm] 
 
