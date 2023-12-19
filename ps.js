@@ -8,11 +8,11 @@
 ****************************************
 [rewrite_local]
 
-^https?:\/\/.adobe.io/mobiles/access_profile/v3 url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/ps.js
+https://lcs-mobile-cops.adobe.io/mobiles/access_profile/v3 url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/ps.js
 
 [mitm] 
 
-hostname = adobe.io
+hostname = lcs-mobile-cops.adobe.io
 
 *****************************************/
 
