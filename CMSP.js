@@ -2,7 +2,7 @@
 
 脚本功能：蜜桃传媒解锁全视频
 应用版本：1.0.0
-应用下载：https://bit.ly/3TF4KxH
+应用下载：https://mitaoqb.com/?pc=3HN7QB
 脚本作者：鹏客软件
 更新时间：2023-12-21
 鹏客网盘：https://peck.cool
