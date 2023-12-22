@@ -10,12 +10,11 @@
 
 *******************************
 
+[rewrite_local]
+^http[s]?:\/\/.*(m6aw0|3ju7q|gar48|68bhf|z0pf9|cloudfront|vg4b3|ie3x0|b1tp).+\/api\/app\/(recommend\/vid\/(list|ad)|mine\/info|ping\/domain\/h5|vid\/(section|info|list|user\/count)|recreation\/list) url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/CMSP.js
+
 [mitm]
 hostname = *m6aw*, *3ju7q*, *gar48*, *68bhf*, *z0pf9*, *cloudfront*, plkxo.vg4b3.com, zpisj.ie3x0.com, xplk.ib1tp.com, *.ie3x0.com, *.vg4b3.com, *.b1tp.com
-
-[rewrite_local]
-# > 蜜桃传媒破解全部视频
-^http[s]?:\/\/.*(m6aw0|3ju7q|gar48|68bhf|z0pf9|cloudfront|vg4b3|ie3x0|b1tp).+\/api\/app\/(recommend\/vid\/(list|ad)|mine\/info|ping\/domain\/h5|vid\/(section|info|list|user\/count)|recreation\/list) url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/CMSP.js
 
 *******************************/
 
