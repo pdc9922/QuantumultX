@@ -50,7 +50,7 @@ let obj = JSON.parse($response.body)
                     item.watch.isFreeWatch = true
                     // 托底
                     item.freeTime = item.playTime
-                    item.watch.watchCount = 999
+                    item.watch.watchCount = 9997
                 })
                 if (decrypted.hasOwnProperty('list')) {
                     decrypted.list = list
@@ -70,7 +70,7 @@ let obj = JSON.parse($response.body)
             },
             // 解锁次数
             'vid/user/count': () => {
-                decrypted = { isCan: true, watchCount: 999 }
+                decrypted = { isCan: true, watchCount: 9999 }
             },
             // 个人中心
             'mine/info': () => {
@@ -80,11 +80,11 @@ let obj = JSON.parse($response.body)
                     follow: 999,
                     fans: 999,
                     like: 999,
-                    name: 'peckios',
+                    name: '鹏客软件出品',
                     summary: 'https://peck.cool',
                     vipLevel: 3,
                     watchCount: 999,
-                    vipExpireDate: '2099-01-01T08:00:00+08:00',
+                    vipExpireDate: '2099-12-12T08:00:00+08:00',
                     isMadou: true,
                     snapVip: 1
                 }
