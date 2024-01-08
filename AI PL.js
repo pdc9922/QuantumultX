@@ -12,7 +12,7 @@
 *******************************
 [rewrite_local]
 
-^https:\/\/partner-ai-api\.quthing\.com\/(ai\/vip\/state|student\/info\/h5) url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/Laiyin.js
+^https:\/\/partner-ai-api\.quthing\.com\/(ai\/vip\/state|student\/info\/h5) url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/AI PL.js
 
 [mitm]
 hostname = partner-ai-api.quthing.com
