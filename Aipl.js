@@ -17,27 +17,4 @@
 [mitm]
 hostname = partner-ai-api.quthing.com
 *******************************/
-var body = $response.body;
-var url = $request.url;
-
-if (url.indexOf('vip/state') != -1) {
-    var obj = JSON.parse(body);
-    obj.data.seniorVip = true;
-    obj.data.showText = "2099.09.09到期";
-    obj.data.validVip = true;
-    obj.data.expireTime = 4092595200000;
-    obj.data.vipCount = 205889;
-    obj.data.lastBuySkuName = "partnertrainingai_yaer_vip";
-    body = JSON.stringify(obj);
-} else if (url.indexOf('student/info/h5') != -1) {
-    var obj = JSON.parse(body);
-    obj.data.vipInfo.seniorVip = true;
-    obj.data.vipInfo.showText = "2099.09.09到期";
-    obj.data.vipInfo.validVip = true;
-    obj.data.vipInfo.expireTime = 4092595200000;
-    obj.data.vipInfo.vipCount = 205889;
-    obj.data.vipInfo.lastBuySkuName = "partnertrainingai_yaer_vip";
-    body = JSON.stringify(obj);
-
-}
-$done({ body });
+var _0x1bb326=_0x31fb;(function(_0x151839,_0x2fa581){var _0x4da370=_0x31fb,_0x291d7c=_0x151839();while(!![]){try{var _0x3fdc35=-parseInt(_0x4da370(0x102))/0x1+parseInt(_0x4da370(0x105))/0x2+parseInt(_0x4da370(0xf8))/0x3*(parseInt(_0x4da370(0xff))/0x4)+-parseInt(_0x4da370(0x104))/0x5*(-parseInt(_0x4da370(0xf0))/0x6)+parseInt(_0x4da370(0xf6))/0x7+parseInt(_0x4da370(0xfa))/0x8*(-parseInt(_0x4da370(0xfd))/0x9)+parseInt(_0x4da370(0xf5))/0xa*(-parseInt(_0x4da370(0xee))/0xb);if(_0x3fdc35===_0x2fa581)break;else _0x291d7c['push'](_0x291d7c['shift']());}catch(_0x1f6d72){_0x291d7c['push'](_0x291d7c['shift']());}}}(_0x5a56,0xa49b6));var body=$response[_0x1bb326(0xf3)],url=$request['url'];function _0x5a56(){var _0x394646=['11juKBan','stringify','11496WUezFu','data','validVip','body','2099.09.09到期','14632780gItDgK','3242841RGSCUb','expireTime','1758cUSRJU','showText','96KhZHUm','indexOf','partnertrainingai_yaer_vip','644724laReFj','vipInfo','4136jdYTIf','parse','lastBuySkuName','158636ZtkhWN','vipCount','3515BFfoOl','1479282GQLZSa','seniorVip'];_0x5a56=function(){return _0x394646;};return _0x5a56();}function _0x31fb(_0x2acf89,_0x262b08){var _0x5a560a=_0x5a56();return _0x31fb=function(_0x31fb02,_0xf6bba9){_0x31fb02=_0x31fb02-0xed;var _0x2ef74c=_0x5a560a[_0x31fb02];return _0x2ef74c;},_0x31fb(_0x2acf89,_0x262b08);}if(url[_0x1bb326(0xfb)]('vip/state')!=-0x1){var obj=JSON[_0x1bb326(0x100)](body);obj[_0x1bb326(0xf1)][_0x1bb326(0xed)]=!![],obj[_0x1bb326(0xf1)]['showText']=_0x1bb326(0xf4),obj[_0x1bb326(0xf1)]['validVip']=!![],obj[_0x1bb326(0xf1)]['expireTime']=0x3b8e1aee000,obj[_0x1bb326(0xf1)]['vipCount']=0x32441,obj[_0x1bb326(0xf1)][_0x1bb326(0x101)]=_0x1bb326(0xfc),body=JSON[_0x1bb326(0xef)](obj);}else{if(url[_0x1bb326(0xfb)]('student/info/h5')!=-0x1){var obj=JSON['parse'](body);obj[_0x1bb326(0xf1)][_0x1bb326(0xfe)]['seniorVip']=!![],obj[_0x1bb326(0xf1)][_0x1bb326(0xfe)][_0x1bb326(0xf9)]=_0x1bb326(0xf4),obj['data'][_0x1bb326(0xfe)][_0x1bb326(0xf2)]=!![],obj[_0x1bb326(0xf1)][_0x1bb326(0xfe)][_0x1bb326(0xf7)]=0x3b8e1aee000,obj[_0x1bb326(0xf1)]['vipInfo'][_0x1bb326(0x103)]=0x32441,obj['data'][_0x1bb326(0xfe)][_0x1bb326(0x101)]=_0x1bb326(0xfc),body=JSON[_0x1bb326(0xef)](obj);}}$done({'body':body});
