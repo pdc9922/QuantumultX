@@ -4,7 +4,8 @@
 使用声明：本脚本仅供学习交流, 禁止转卖与商业用途！
 脚本注意：记得打开代理软件的通知权限，播放地址域名随时可能变化,记得自己添加hostname或替换域名！！
 使用方法：打开重写规则➟ 如打开91短视频(举例）➟ 然后点击通知跳转➟ 点击获取视频地址➟ 跳转到浏览器或者其他工具观看即可。
-本脚本由鹏客软件整合更新，感谢原作者yuheng,Evn...等！作者源地址：https://github.com/Yu9191/Rewrite/tree/main/m3u8
+本脚本由鹏客软件整合更新，感谢原作者yuheng,Evn...等！
+作者源地址：https://github.com/Yu9191/Rewrite/tree/main/m3u8
 
 *******************************
 下载地址合集（部分可能失效）：
@@ -53,10 +54,11 @@ GTV https://958.xqhjej.com
 
 *******************************
 [rewrite_local]
-^https:\/\/[^\/]*\.pnowdvc\.cn\/\w+\/[a-z0-9]{32}\/[a-z0-9]{32}\.m3u8 url script-request-header https://raw.githubusercontent.com/pdc9922/QuantumultX/main/m3u8.js
+^https://[^\/]*.pnowdvc.cn/\w+/[a-z0-9]{32}/[a-z0-9]{32}.m3u8 url script-request-header https://raw.githubusercontent.com/pdc9922/QuantumultX/main/m3u8.js
+
 
 [mitm]
-hostname = *.eimkeb.com
+hostname = *.hblilvd.cn
 *******************************/
 const $ = new Env("GOGOGOGO");
 let url = $request.url, headers = $request.headers;
