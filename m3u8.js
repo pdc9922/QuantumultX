@@ -2,8 +2,11 @@
 更新时间：2024-01-09
 鹏客网盘：https://www.peck.cool
 使用声明：本脚本仅供学习交流, 禁止转卖与商业用途！
-脚本注意：记得打开代理软件的通知权限，播放地址域名随时可能变化,记得自己添加hostname或替换域名！！
-使用方法：打开重写规则➟ 如打开91短视频(举例）➟ 然后点击通知跳转➟ 点击获取视频地址➟ 跳转到浏览器或者其他工具观看即可。
+脚本注意：记得打开圈X通知权限，本脚本仅匹配M3U8格式的播放地址其他格式无效，域名随时可能变化,需自己手动添加hostname或替换域名！！
+使用方法：
+下载本JS脚本，文本编辑修改[rewrite_local]内的域名和添加hostname的域名(如*.hblilvd.cn)并添加到iOS自带文件APP的圈X目录内Scripts下，
+然后打开圈X重写规则➟ 如打开91短视频(举例）➟ 然后点击通知跳转➟ 点击获取视频地址➟ 跳转到浏览器或者其他工具观看即可。
+
 本脚本由鹏客软件整合更新，感谢原作者yuheng,Evn...等！
 作者源地址：https://github.com/Yu9191/Rewrite/tree/main/m3u8
 
@@ -54,7 +57,7 @@ GTV https://958.xqhjej.com
 
 *******************************
 [rewrite_local]
-^https://[^\/]*.pnowdvc.cn/\w+/[a-z0-9]{32}/[a-z0-9]{32}.m3u8 url script-request-header https://raw.githubusercontent.com/pdc9922/QuantumultX/main/m3u8.js
+^https://[^\/]*.hblilvd.cn/\w+/[a-z0-9]{32}/[a-z0-9]{32}.m3u8 url script-request-header https://raw.githubusercontent.com/pdc9922/QuantumultX/main/m3u8.js
 
 
 [mitm]
