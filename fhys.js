@@ -1,11 +1,17 @@
 /*
-凤凰易学
-解锁会员 及全课程 资源
+/******************************************
+APP名称：凤凰易学
+鹏客官网：https://peck.cool/
+脚本作者：鹏客软件
+免费QQ群：798678782
+使用声明：解锁会员及全课程,脚本仅供参考,请勿转载与售卖！
+******************************************
+
 [rewrite_local]
-https:\/\/app\.fhestudy\.com\/(collection\/getCatalogAndResource\.do|collection\/getVideoResource\.do|collection\/getTeachingOrCourseDetail\.do|system\/getCheckOutInfo\.do|textbooks\/getTextBookInCourse\.do|user\/getUserInfo\.do|home\/getHomeData\.do) url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/fhyx.js
+https:\/\/app\.fhestudy\.com\/(collection\/getCatalogAndResource\.do|collection\/getVideoResource\.do|collection\/getTeachingOrCourseDetail\.do|system\/getCheckOutInfo\.do|textbooks\/getTextBookInCourse\.do|user\/getUserInfo\.do|home\/getHomeData\.do) url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/fhys.js
 [mitm] 
 hostname = app.fhestudy.com
-*/
+*******************************************/
 
 let body = $response.body;
 let obj = JSON.parse(body);
