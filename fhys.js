@@ -27,7 +27,7 @@ if (/https:\/\/app\.fhestudy\.com\/home\/getHomeData\.do/.test(url)) {
     }
 } else if (url === "https://app.fhestudy.com/user/getUserInfo.do") {
     // 会员
-    obj.data.name = "baby";
+    obj.data.name = "peck";
     obj.data.rightsType = 1;
     obj.data.rightsStartTime = "2024-09-29";
     obj.data.schoolName = "鹏客大学";
