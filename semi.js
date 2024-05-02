@@ -2,7 +2,7 @@
 色迷聚合
 
 [rewrite_local]
-http:\/\/api.sgapi004.xyz\/api\/applogin url script-response-body 
+http:\/\/api.sgapi004.xyz\/api\/applogin url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/main/semi.js
 
 [mitm] 
 hostname = api.sgapi004.xyz
