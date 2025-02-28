@@ -7,7 +7,7 @@
 
 *******************************/
 [rewrite_local]
-^https?:\/\/zsbt\.apisrv\.cn url script-response-body https://raw.githubusercontent.com/btzs.js
+^https?:\/\/zsbt\.apisrv\.cn url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/refs/heads/main/btzs.js
 
 [mitm]
 hostname = zsbt.apisrv.cn
