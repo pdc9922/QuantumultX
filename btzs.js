@@ -14,8 +14,6 @@
 hostname = zsbt.apisrv.cn
 *******************************/
 
-
-$notify("鹏哥提醒您脚本已注入成功!");
 var body = $response.body
     .replace(/false/g, "true");
 $done({
