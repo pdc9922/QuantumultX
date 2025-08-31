@@ -1,3 +1,4 @@
+
 /******************************
 
 名称：潮汐（冥想 白噪音）
@@ -21,10 +22,7 @@ var body = $response.body;
 var url = $request.url;
 
 if (url.indexOf('users/self') != -1) {
-    try {
         var obj = JSON.parse(body);
-        
-        // 确保 data 对象存在
         if (obj && obj.data) {
             obj.data.is_valid = true;
             obj.data.active_sub = true;
@@ -42,9 +40,7 @@ if (url.indexOf('users/self') != -1) {
             
             body = JSON.stringify(obj);
         }
-    } catch (error) {
-        console.log("JSON解析错误: " + error);
-    }
+   
 }
 $notify("鹏客软件提醒您脚本已注入成功，严禁转载支持原创!");
 $done({ body });
