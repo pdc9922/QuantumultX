@@ -22,14 +22,26 @@ hostname = 5c8gqqf.to1ogvz.xyz, 9sdec0e.mls08ph.xyz, zur9pl8.kmh8btd.xyz, 0rw804
 
 
 
-let body = JSON.parse($response.body);
+let body = $response.body;
 
-if (body.data) {
-  body.data.isVip = true;
-  body.data.vipExpire = "2099-12-12";
-  body.data.hasAd = false;
-  body.data.watchLimit = false;
-  body.data.nickname = "鹏客软件出品peck.cool";
+if ($request.url.includes('/video/info')) {
+  body = body
+    .replace(/try\.m3u8/g,           'index.m3u8')      // 去试看
+    .replace(/isPurchase":\d/g,      'isPurchase":1')   // 已购买
+    .replace(/userVip":\d/g,         'userVip":1')      // VIP
+    .replace(/tryVideoUrl/g,        'videoUrl');       // 正片地址
 }
 
-$done({ body: JSON.stringify(body) });
+if ($request.url.includes('/user/info')) {
+  const obj = JSON.parse(body);
+  if (obj.data) {
+    obj.data.isVip      = true;
+    obj.data.vipExpire  = "2099-12-31";
+    obj.data.hasAd      = false;
+    obj.data.watchLimit = false;
+    obj.data.nickname   = "鹏客软件出品peck.cool";
+  }
+  body = JSON.stringify(obj);
+}
+
+$done({ body });
