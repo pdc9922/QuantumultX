@@ -22,24 +22,36 @@ hostname = 5c8gqqf.to1ogvz.xyz, 9sdec0e.mls08ph.xyz, zur9pl8.kmh8btd.xyz, 0rw804
 
 
 
-let body = JSON.parse($response.body);
+/*  === 日志开关（调试用）===  */
+console.log('🔥 jtsp.js 被加载，URL=' + $request.url);
 
+let body = $response.body;          // 先拿原始文本
+
+/* 1. 视频详情接口 - 文本替换 */
 if ($request.url.includes('/video/info')) {
   body = body
-    .replace(/try\.m3u8/g,           'index.m3u8')
-    .replace(/isPurchase":\d/g,      'isPurchase":1')
-    .replace(/userVip":\d/g,         'userVip":1')
-    .replace(/tryVideoUrl/g,        'videoUrl');
+    .replace(/try\.m3u8/g,      'index.m3u8')
+    .replace(/isPurchase":\d/g, 'isPurchase":1')
+    .replace(/userVip":\d/g,    'userVip":1')
+    .replace(/tryVideoUrl/g,   'videoUrl');
 }
 
+/* 2. 用户信息接口 - JSON 改写 */
 if ($request.url.includes('/user/info')) {
-  const obj = JSON.parse(body);
-  if (obj.data) {
-    obj.data.isVip      = true;
-    obj.data.vipExpire  = "2099-12-31";
-    obj.data.hasAd      = false;
-    obj.data.watchLimit = false;
-    obj.data.nickname   = "鹏客软件出品peck.cool";
+  try {
+    const obj = JSON.parse(body);
+    if (obj.data) {
+      obj.data.isVip      = true;
+      obj.data.vipExpire  = "2099-12-31";
+      obj.data.hasAd      = false;
+      obj.data.watchLimit = false;
+      obj.data.nickname   = "鹏客软件出品peck.cool";
+    }
+    body = JSON.stringify(obj);
+  } catch (e) {
+    console.log('❌ JSON 解析失败：' + e);
   }
+}
 
-$done({ body: JSON.stringify(body) });
+console.log('✅ 脚本执行完成');
+$done({ body });
