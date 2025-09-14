@@ -7,9 +7,9 @@
  
  [rewrite_local]
 # > 加藤视频vip解锁,付费视频解锁,下载,会员线路,去广告++
-^https?:\/\/.+\/shorter\/(video\/longvideoinfo|resource\/adInfoPageList\?adSpaceId|user\/getUser|resource\/getWindowNotice|tabIconConfigView|user\/getVipPvg|video\/home|video\/search).*$ url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/jtsp.js
+^https?:\/\/.+\/shorter\/(video\/longvideoinfo|resource\/adInfoPageList\?adSpaceId|user\/getUser|resource\/getWindowNotice|tabIconConfigView|user\/getVipPvg|video\/home|video\/search).*$ url script-response-body https://raw.githubusercontent.com/pdc9922/QuantumultX/refs/heads/main/jtsp.js
 # > 解锁漫画
-^https?://.+\/shorter\/anime\/tbookchapter0\/info\?bookId url script-request-header https://raw.githubusercontent.com/Yu9191/Rewrite/main/jtsp.js
+^https?://.+\/shorter\/anime\/tbookchapter0\/info\?bookId url script-request-header https://raw.githubusercontent.com/pdc9922/QuantumultX/refs/heads/main/jtsp.js
 
 # > 去广告
 ^https?://.+/shorter/resource/getAdInfoBySpaceId\?ad url reject
