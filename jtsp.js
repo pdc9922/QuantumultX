@@ -29,7 +29,7 @@ if (body.data) {
   body.data.vipExpire = "2099-12-12";
   body.data.hasAd = false;
   body.data.watchLimit = false;
-  body.data.nickname = "VIP用户";
+  body.data.nickname = "鹏客软件出品peck.cool";
 }
 
 $done({ body: JSON.stringify(body) });
